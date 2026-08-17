@@ -1,0 +1,8 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+data/io.github.masonj5002.betterclocks.desktop.in
+data/io.github.masonj5002.betterclocks.metainfo.xml.in
+data/io.github.masonj5002.betterclocks.gschema.xml
+src/main.c
+src/better-clocks-window.c
+src/better-clocks-window.ui

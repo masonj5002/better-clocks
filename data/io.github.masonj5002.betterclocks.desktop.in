@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Better-clocks
+Exec=better-clocks
+Icon=io.github.masonj5002.betterclocks
+Terminal=false
+Type=Application
+Categories=Utility;
+Keywords=GTK;
+StartupNotify=true
+DBusActivatable=true
