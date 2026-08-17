@@ -1,3 +1,3 @@
-# better-clocks
+# Better Clocks
 
-A description of this project.
+Better Clocks. A GNOME GTK4 app written in C.

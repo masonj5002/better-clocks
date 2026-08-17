@@ -1,7 +1,7 @@
 {
     "id" : "io.github.masonj5002.betterclocks",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "48",
+    "runtime-version" : "50",
     "sdk" : "org.gnome.Sdk",
     "command" : "better-clocks",
     "finish-args" : [
@@ -30,7 +30,7 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "url" : "file:///home/mason/Projects"
+                    "url" : "https://github.com/masonj5002/better-clocks"
                 }
             ]
         }
