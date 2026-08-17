@@ -1,0 +1,10 @@
+# TODO
+
+- [X] use gnome builder to generate necessary files
+- [X] display "hello world" centered in window
+- [X] get intellisense working in VSCode
+- [X] change hello world text
+- [ ] display current time
+- [ ] display a start button that performs an action
+- [ ] basic timer functionality
+- [ ] fully working, debugged with UI-polish
