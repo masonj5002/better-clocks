@@ -36,13 +36,13 @@
                 <property name="margin-start">6</property>
                 <property name="margin-end">6</property>
                 <style>
-                  <class name="title-1"/>
+                  <class name="title-2"/>
                 </style>
               </object>
             </child>
             <child>
-              <object class="GtkLabel">
-                <property name="label" translatable="yes">Block 2</property>
+              <object class="GtkLabel" id="current_time">
+                <property name="label" translatable="yes">_time goes here_</property>
                 <property name="hexpand">true</property>
                 <property name="vexpand">true</property>
                 <property name="margin-top">6</property>
@@ -50,7 +50,8 @@
                 <property name="margin-start">6</property>
                 <property name="margin-end">6</property>
                 <style>
-                  <class name="title-2"/>
+                  <class name="title-1"/>
+                  <class name="numeric"/>
                 </style>
               </object>
             </child>

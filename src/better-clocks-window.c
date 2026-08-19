@@ -24,25 +24,29 @@
 
 struct _BetterClocksWindow
 {
-	AdwApplicationWindow  parent_instance;
+	AdwApplicationWindow parent_instance;
 
 	/* Template widgets */
-	GtkLabel            *label;
+	GtkLabel *label;
+	GtkLabel *current_time;
 };
 
-G_DEFINE_FINAL_TYPE (BetterClocksWindow, better_clocks_window, ADW_TYPE_APPLICATION_WINDOW)
+G_DEFINE_FINAL_TYPE(BetterClocksWindow, better_clocks_window, ADW_TYPE_APPLICATION_WINDOW)
 
 static void
-better_clocks_window_class_init (BetterClocksWindowClass *klass)
+better_clocks_window_class_init(BetterClocksWindowClass *klass)
 {
-	GtkWidgetClass *widget_class = GTK_WIDGET_CLASS (klass);
+	GtkWidgetClass *widget_class = GTK_WIDGET_CLASS(klass);
 
-	gtk_widget_class_set_template_from_resource (widget_class, "/io/github/masonj5002/betterclocks/better-clocks-window.ui");
-	gtk_widget_class_bind_template_child (widget_class, BetterClocksWindow, label);
+	gtk_widget_class_set_template_from_resource(widget_class, "/io/github/masonj5002/betterclocks/better-clocks-window.ui");
+	gtk_widget_class_bind_template_child(widget_class, BetterClocksWindow, label);
+	gtk_widget_class_bind_template_child(widget_class, BetterClocksWindow, current_time);
 }
 
 static void
-better_clocks_window_init (BetterClocksWindow *self)
+better_clocks_window_init(BetterClocksWindow *self)
 {
-	gtk_widget_init_template (GTK_WIDGET (self));
+	gtk_widget_init_template(GTK_WIDGET(self));
+
+	gtk_label_set_text(self->current_time, "Helllooo from C!");
 }
