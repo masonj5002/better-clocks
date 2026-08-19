@@ -9,4 +9,5 @@
 - [ ] display current time
 - [ ] display a start button that performs an action
 - [ ] basic timer functionality
+- [ ] find and fix memory leaks
 - [ ] fully working, debugged with UI-polish
