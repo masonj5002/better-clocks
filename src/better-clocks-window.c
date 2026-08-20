@@ -43,10 +43,22 @@ better_clocks_window_class_init(BetterClocksWindowClass *klass)
 	gtk_widget_class_bind_template_child(widget_class, BetterClocksWindow, current_time);
 }
 
+static void display_time(void)
+{
+
+	struct tm *ptr;
+	time_t t = time(NULL);
+
+	ptr = localtime(&t);
+
+	g_print("HELLO USING G_PRINT FROM `display_time`: %s!\n", asctime(ptr));
+}
+
 static void
 better_clocks_window_init(BetterClocksWindow *self)
 {
 	gtk_widget_init_template(GTK_WIDGET(self));
 
 	gtk_label_set_text(self->current_time, "Helllooo from C!");
+	display_time();
 }
