@@ -22,6 +22,7 @@
 
 #include <stdlib.h>
 #include <adwaita.h>
+#include <glib.h>
 #include <time.h>
 
 G_BEGIN_DECLS

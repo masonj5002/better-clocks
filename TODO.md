@@ -8,7 +8,7 @@
 - *place time display in function in C*
   - [ ] place in it's own function in `better-clocks-functions.h`, `better-clocks-functions.c`
   - [X] display current time on-screen
-  - [ ] make time update in real-time
+  - [X] make time update in real-time
   - [ ] format time
 - [ ] display a start button that performs an action
 - [ ] basic timer functionality
