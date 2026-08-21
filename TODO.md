@@ -7,7 +7,9 @@
 - [X] print *anything* from C
 - *place time display in function in C*
   - [ ] place in it's own function in `better-clocks-functions.h`, `better-clocks-functions.c`
-  - [ ] display current time
+  - [X] display current time on-screen
+  - [ ] make time update in real-time
+  - [ ] format time
 - [ ] display a start button that performs an action
 - [ ] basic timer functionality
 - [ ] find and fix memory leaks
