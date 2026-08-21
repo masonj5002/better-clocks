@@ -20,6 +20,7 @@
 
 #pragma once
 
+#include <stdlib.h>
 #include <adwaita.h>
 #include <time.h>
 
