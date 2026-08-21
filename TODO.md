@@ -11,6 +11,7 @@
   - [X] make time update in real-time
   - [ ] format time
 - [ ] display a start button that performs an action
+- [ ] Add a second 'tab' / page for timer
 - [ ] basic timer functionality
 - [ ] find and fix memory leaks
 - [ ] fully working, debugged with UI-polish
