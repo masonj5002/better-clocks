@@ -45,7 +45,6 @@ better_clocks_window_class_init(BetterClocksWindowClass *klass)
 
 static char *display_time(void)
 {
-
 	struct tm *ptr;
 	time_t t = time(NULL);
 	ptr = localtime(&t);
