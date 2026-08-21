@@ -11,5 +11,9 @@
     },
     "mesonbuild.configureOnOpen": false,
     "mesonbuild.buildFolder": "_build",
-    "mesonbuild.mesonPath": "${workspaceFolder}/.flatpak/meson.sh"
+    "mesonbuild.mesonPath": "${workspaceFolder}/.flatpak/meson.sh",
+    "cSpell.words": [
+        "gboolean",
+        "gpointer"
+    ]
 }
