@@ -47,12 +47,14 @@ static gboolean display_time(gpointer gptr)
 {
 	BetterClocksWindow *self = BETTER_CLOCKS_WINDOW(gptr);
 
-	struct tm *ptr;
+	struct tm *time_info;
 	time_t t = time(NULL);
-	ptr = localtime(&t);
+	const int BUFFER_SIZE = 80;
+	time_info = localtime(&t);
+	char buffer[BUFFER_SIZE];
 
-	//return asctime(ptr);
-	gtk_label_set_text(self->current_time, asctime(ptr));
+	strftime(buffer, BUFFER_SIZE, "%l:%M:%S %p", time_info);
+	gtk_label_set_text(self->current_time, buffer);
 
 	return TRUE;
 }

@@ -9,7 +9,7 @@
   - [ ] place in it's own function in `better-clocks-functions.h`, `better-clocks-functions.c`
   - [X] display current time on-screen
   - [X] make time update in real-time
-  - [ ] format time
+  - [X] format time to a standard format
 - [ ] display a start button that performs an action
 - [ ] Add a second 'tab' / page for timer
 - [ ] basic timer functionality
