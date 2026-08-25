@@ -50,8 +50,8 @@ static gboolean display_time(gpointer gptr)
 	struct tm *time_info;
 	time_t t = time(NULL);
 	const int BUFFER_SIZE = 80;
-	time_info = localtime(&t);
 	char buffer[BUFFER_SIZE];
+	time_info = localtime(&t);
 
 	strftime(buffer, BUFFER_SIZE, "%l:%M:%S %p", time_info);
 	gtk_label_set_text(self->current_time, buffer);
