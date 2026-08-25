@@ -63,9 +63,7 @@ static void
 better_clocks_window_init(BetterClocksWindow *self)
 {
 	gtk_widget_init_template(GTK_WIDGET(self));
-	//snprintf(time_display, strlen(display_time()) + 18, "Local time: %s\n", display_time());
-	//gtk_label_set_text(self->current_time, time_display);
-	
+
 	display_time(self);
 	g_timeout_add_seconds(0.25, display_time, self);
 }
