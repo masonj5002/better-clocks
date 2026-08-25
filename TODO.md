@@ -11,6 +11,7 @@
   - [X] make time update in real-time
   - [X] format time to a standard format
 - [ ] display a start button that performs an action
+- [ ] make clock text (time) bigger
 - [ ] Add a second 'tab' / page for timer
 - [ ] basic timer functionality
 - [ ] find and fix memory leaks
