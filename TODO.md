@@ -13,6 +13,7 @@
 - [X] Display a button, created in XML with text controlled in C
 - [ ] display a start button that prints a msg to the console
 - [ ] display a start button that performs a useful action
+- [ ] position button to better location in window
 - [ ] make clock text (time) bigger
 - [ ] Add a second 'tab' / page for timer
 - [ ] basic timer functionality
