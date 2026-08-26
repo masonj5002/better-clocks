@@ -14,6 +14,8 @@
     "mesonbuild.mesonPath": "${workspaceFolder}/.flatpak/meson.sh",
     "cSpell.words": [
         "gboolean",
-        "gpointer"
+        "gpointer",
+        "hexpand",
+        "vexpand"
     ]
 }
