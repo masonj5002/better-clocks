@@ -29,6 +29,7 @@ struct _BetterClocksWindow
 	/* Template widgets */
 	GtkLabel *label;
 	GtkLabel *current_time;
+	GtkButton *clock_button;
 };
 
 G_DEFINE_FINAL_TYPE(BetterClocksWindow, better_clocks_window, ADW_TYPE_APPLICATION_WINDOW)
@@ -41,6 +42,7 @@ better_clocks_window_class_init(BetterClocksWindowClass *klass)
 	gtk_widget_class_set_template_from_resource(widget_class, "/io/github/masonj5002/betterclocks/better-clocks-window.ui");
 	gtk_widget_class_bind_template_child(widget_class, BetterClocksWindow, label);
 	gtk_widget_class_bind_template_child(widget_class, BetterClocksWindow, current_time);
+	gtk_widget_class_bind_template_child(widget_class, BetterClocksWindow, clock_button);
 }
 
 static gboolean display_time(gpointer gptr)
@@ -59,6 +61,16 @@ static gboolean display_time(gpointer gptr)
 	return TRUE;
 }
 
+static gboolean clock_button(gpointer gptr)
+{
+	BetterClocksWindow *self = BETTER_CLOCKS_WINDOW(gptr);
+	char msg[] = "Click me!";
+
+	gtk_button_set_label(self->clock_button, msg);
+
+	return TRUE;
+}
+
 static void
 better_clocks_window_init(BetterClocksWindow *self)
 {
@@ -66,4 +78,5 @@ better_clocks_window_init(BetterClocksWindow *self)
 
 	display_time(self);
 	g_timeout_add_seconds(0.25, display_time, self);
+	clock_button(self);
 }
