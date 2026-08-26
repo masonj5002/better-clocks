@@ -35,6 +35,13 @@ struct _BetterClocksWindow
 G_DEFINE_FINAL_TYPE(BetterClocksWindow, better_clocks_window, ADW_TYPE_APPLICATION_WINDOW)
 
 static void
+better_clocks_window__open_clicked(GtkButton *clock_button, gpointer user_data)
+{
+	BetterClocksWindow *self = user_data;
+	g_print("Button clicked!\n");
+}
+
+static void
 better_clocks_window_class_init(BetterClocksWindowClass *klass)
 {
 	GtkWidgetClass *widget_class = GTK_WIDGET_CLASS(klass);
@@ -67,6 +74,7 @@ static gboolean clock_button(gpointer gptr)
 	char msg[] = "Click me!";
 
 	gtk_button_set_label(self->clock_button, msg);
+	g_signal_connect(self->clock_button, "clicked", G_CALLBACK(better_clocks_window__open_clicked), self);
 
 	return TRUE;
 }
